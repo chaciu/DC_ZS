@@ -14,7 +14,7 @@ REVOKE ALL PRIVILEGES ON SCHEMA public FROM expense_tracker_user;
 -- 3. Jeżeli w Twoim środowisku istnieje już schemat expense_tracker (z obiektami tabel) usuń
 -- go korzystając z polecenie DROP CASCADE.
 
-DROP SCHEMA expense_tracker CASCADE;
+DROP SCHEMA IF EXISTS expense_tracker CASCADE;
 
 
 -- 4. Utwórz nową rolę expense_tracker_group.
