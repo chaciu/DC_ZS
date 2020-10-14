@@ -1,4 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS expense_tracker;
+aCREATE SCHEMA IF NOT EXISTS expense_tracker;
 
 DROP TABLE IF EXISTS expense_tracker.bank_account_owner;
 
