@@ -32,8 +32,7 @@ DROP ROLE user_training;
 
 CREATE ROLE reporting_ro;
 GRANT CONNECT ON DATABASE postgres TO reporting_ro;
-GRANT USAGE ON SCHEMA training TO reporting_ro;
-GRANT CREATE ON SCHEMA training TO reporting_ro;
+GRANT USAGE, CREATE ON SCHEMA training TO reporting_ro;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA training TO reporting_ro;
 
 
@@ -47,7 +46,7 @@ GRANT reporting_ro TO reporting_user;
 -- 7. Będąc zalogowany na użytkownika reporting_user, spróbuj utworzyć nową tabele (dowolną)
 -- w schemacie training.
 
-CREATE TABLE test_table (id integer);
+CREATE TABLE training.test_table (id integer);
 
 
 -- 8. Zabierz uprawnienia roli reporting_ro do tworzenia obiektów w schemacie training;

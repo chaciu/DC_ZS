@@ -17,7 +17,7 @@ INSERT INTO contacts
 
 -- 1 NF
 --Tabela musi być relacją i nie może zawierać żadnych powtarzających się grup.
-ALTER TABLE contacts DROP name_surname;
+ALTER TABLE contacts DROP nam e_surname;
 ALTER TABLE contacts ADD name TEXT;
 ALTER TABLE contacts ADD surname TEXT PRIMARY KEY;
 

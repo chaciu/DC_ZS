@@ -8,7 +8,7 @@ CREATE ROLE expense_tracker_user WITH LOGIN PASSWORD 'bardzosilnehaslo';
 -- 2. Korzystając ze składni REVOKE, odbierz uprawnienia tworzenia obiektów w schemacie
 -- public roli PUBLIC
 
-REVOKE ALL PRIVILEGES ON SCHEMA public FROM expense_tracker_user;
+REVOKE CREATE ON SCHEMA public FROM expense_tracker_user;
 
 
 -- 3. Jeżeli w Twoim środowisku istnieje już schemat expense_tracker (z obiektami tabel) usuń
